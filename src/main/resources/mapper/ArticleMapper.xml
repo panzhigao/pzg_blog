@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="vip.panzhigao.mapper.ArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="vip.panzhigao.entity.Article">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="username" property="username" />
+        <result column="status" property="status" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="publish_time" property="publishTime" />
+        <result column="title" property="title" />
+        <result column="content" property="content" />
+        <result column="outline" property="outline" />
+        <result column="image" property="image" />
+        <result column="comment_count" property="commentCount" />
+        <result column="view_count" property="viewCount" />
+        <result column="type" property="type" />
+        <result column="top" property="top" />
+        <result column="high_quality" property="highQuality" />
+        <result column="category_id" property="categoryId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id, username, status, create_time, update_time, publish_time, title, content, outline, image, comment_count, view_count, type, top, high_quality, category_id
+    </sql>
+
+</mapper>

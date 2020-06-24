@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="vip.panzhigao.mapper.UserExtensionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="vip.panzhigao.entity.UserExtension">
+        <id column="id" property="id" />
+        <result column="nickname" property="nickname" />
+        <result column="user_portrait" property="userPortrait" />
+        <result column="user_brief" property="userBrief" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="article_counts" property="articleCounts" />
+        <result column="comment_counts" property="commentCounts" />
+        <result column="total_score" property="totalScore" />
+        <result column="continuous_login_days" property="continuousLoginDays" />
+        <result column="continuous_check_in_days" property="continuousCheckInDays" />
+        <result column="total_login_days" property="totalLoginDays" />
+        <result column="total_check_in_days" property="totalCheckInDays" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, nickname, user_portrait, user_brief, create_time, update_time, article_counts, comment_counts, total_score, continuous_login_days, continuous_check_in_days, total_login_days, total_check_in_days
+    </sql>
+
+</mapper>

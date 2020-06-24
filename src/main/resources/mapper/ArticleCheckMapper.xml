@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="vip.panzhigao.mapper.ArticleCheckMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="vip.panzhigao.entity.ArticleCheck">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="username" property="username" />
+        <result column="article_id" property="articleId" />
+        <result column="title" property="title" />
+        <result column="content" property="content" />
+        <result column="complete_flag" property="completeFlag" />
+        <result column="check_type" property="checkType" />
+        <result column="check_user_id" property="checkUserId" />
+        <result column="check_username" property="checkUsername" />
+        <result column="check_time" property="checkTime" />
+        <result column="create_time" property="createTime" />
+        <result column="approve_flag" property="approveFlag" />
+        <result column="remark" property="remark" />
+        <result column="category_id" property="categoryId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id, username, article_id, title, content, complete_flag, check_type, check_user_id, check_username, check_time, create_time, approve_flag, remark, category_id
+    </sql>
+
+</mapper>
